@@ -1,0 +1,23 @@
+POST http://localhost:12345/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": "2",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams"
+}
+
+###
+
+GET http://localhost:12345/books HTTP/1.1
+
+
+###
+
+POST http://localhost:12345/books/2/comments HTTP/1.1
+Content-Type: application/json
+
+{
+    "author": "Wesley",
+    "comment": "This is a comment"
+}
